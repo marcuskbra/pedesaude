@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teste Slider</title>
+	
+	
+	<link href="flexslider.css" rel="stylesheet">
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="jquery.flexslider.js"></script>
+	
+	<style type="text/css">
+		section.slider .flexslider .slides img {
+			height: 400px;
+			width: auto;
+		}
+	
+	</style>
+</head>
+
+
+<body id="top">
+
+	<div class="row">
+
+		<!-- Slider Markup -->
+		<section class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li><img src="../img/pastosa-3.jpg" class="img-responsive"></li>
+					<li><img class="lazy img-responsive" src="../img/pastosa-1.jpg"></li>
+					<li><img class="lazy img-responsive" src="../img/pastosa-3.jpg"></li>
+					<li><img class="lazy img-responsive" src="../img/sopa-1.jpg"></li>
+					<li><img class="lazy img-responsive" src="../img/sopa-2.jpg"></li>
+					<li><img class="lazy img-responsive" src="../img/sopa-3.jpg"></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+	<script>
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation : "slide"
+			});
+		});
+	</script>
+
+</body>
+</html>

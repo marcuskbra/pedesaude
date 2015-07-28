@@ -11,7 +11,7 @@
 /* xGA iPad */
 @media screen and (max-width:1024px) {
 	.waypoint3 { background-position: 50px 0; }
-	.swag { background-attachment: scroll; }
+	.prods { background-attachment: scroll; }
 	.subscribe { background-attachment: scroll; }
 }
 /* 1200px (Small Desktop, Netbook) */
