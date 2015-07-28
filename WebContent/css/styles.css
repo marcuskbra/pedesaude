@@ -3,6 +3,10 @@
 Start Main Menu - by PrettySticky 
 ========================================================================== */
 /* Global form Menu*/
+#header {
+	height: 100%;
+}
+
 #header nav {
 	position: fixed;
 	background: none;
@@ -143,6 +147,11 @@ Start Main Menu - by PrettySticky
 /* ==========================================================================
 header
 ========================================================================== */
+html,body{
+    width: 100%;
+    height:100%;
+}
+
 .header-bg {
 	background: url('../img/site-header.jpg') no-repeat center center;
 	-webkit-background-size: cover;
@@ -150,7 +159,7 @@ header
 	-o-background-size: cover;
 	background-size: cover;
 	padding: 65px 0 300px 0;
-	height: auto;
+	height: 100%;
 }
 
 .header-bg h1 {
@@ -257,7 +266,7 @@ html, html a { -webkit-font-smoothing: antialiased; text-shadow: 1px 1px 1px rgb
 * elements. */
 html, button, input, select, textarea { font-family: 'Varela Round', sans-serif; }
 /* * Addresses margins handled incorrectly in IE 6/7. */
-body { margin: 0; font-family: 'Open Sans', sans-serif; }
+body { margin: 0; font-family: 'Varela Round', 'Open Sans', sans-serif; }
 /* ==========================================================================
 Links
 ========================================================================== */
@@ -436,10 +445,10 @@ Features
 /* ==========================================================================
 prods
 ========================================================================== */
-.prods { background: url('../img/produtos-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 200px 0; }
+.prods { background: url('../img/produtos-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 200px 0; height: 100%;}
 .prods h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .prods h1 span { display: block; font-size: 25px; margin-top: 20px; }
-.fit { background: url('../img/linha-fit-bg---Copy.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 200px 0; }
+.fit { background: url('../img/linha-fit-bg---Copy.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 200px 0; height: 100%;}
 .fit h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .fit h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(61, 201, 179, 0.8); display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
