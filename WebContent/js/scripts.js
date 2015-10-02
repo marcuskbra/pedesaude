@@ -114,7 +114,7 @@ $(window).load(function () {
 
 /***************** Modal Carousel ******************/
 $(function () {
-    $('#gallery a.expand').click(function () {
+    $('a.expand[data-modal-images]').click(function () {
         $('.carousel-inner').html('');
         var dataModalImgs = $(this).data('modalImages');
         var modalImgs = [];
@@ -162,3 +162,41 @@ $(function () {
         });
     });
 });
+
+
+/***************** Mustache Templates for Modals ***************** */
+
+var template = $('#galeria-template').html();
+var slidersLiquida = new Array();
+
+slidersLiquida.push(galleryItem('Sopa de Carne com Lentilha', 'img/liquida/sopa-carne-lentilha-1.jpg', 'img/liquida/sopa-carne-lentilha-1.jpg,img/liquida/sopa-carne-lentilha-2.jpg', 'Deliciosa Sopa de Carne com Lentilha'));
+slidersLiquida.push(galleryItem('Caldo de Frango', 'img/liquida/caldo-frango-1.jpg', 'img/liquida/caldo-frango-1.jpg,img/liquida/caldo-frango-2.jpg', 'Delicioso Caldo de Frango'));
+slidersLiquida.push(galleryItem('Sopa de Frango com Feijão', 'img/liquida/sopa-frango-feijao-1.jpg', 'img/liquida/sopa-frango-feijao-1.jpg,img/liquida/sopa-frango-feijao-2.jpg', 'Deliciosa Sopa de Frango com Feijão'));
+
+var rendered = Mustache.render(template, {'produtos': slidersLiquida});
+$('#produtos-fase-liquida').html(rendered);
+
+var slidersPastosa = new Array();
+
+slidersPastosa.push(galleryItem('Estrogonofe de Carne ', 'img/pastosa/estrogonofe-carne-1.jpg', 'img/pastosa/estrogonofe-carne-1.jpg,img/pastosa/estrogonofe-carne-2.jpg,img/pastosa/estrogonofe-carne-3.jpg', 'Delicioso Estrogonofe carne da fase pastosa'));
+slidersPastosa.push(galleryItem('Risoto de bacalhau ', 'img/pastosa/risoto-bacalhau-1.jpg', 'img/pastosa/risoto-bacalhau-1.jpg,img/pastosa/risoto-bacalhau-2.jpg', 'Delicioso Risoto bacalhau da fase pastosa'));
+slidersPastosa.push(galleryItem('Escondidinho de Carne ', 'img/pastosa/escondidinho-carne-1.jpg', 'img/pastosa/escondidinho-carne-1.jpg,img/pastosa/escondidinho-carne-2.jpg', 'Delicioso Escondidinho carne da fase pastosa'));
+slidersPastosa.push(galleryItem('Lasanha de Carne e beringela ', 'img/pastosa/lasanha-carne-beringela-1.jpg', 'img/pastosa/lasanha-carne-beringela-1.jpg,lasanha-carne-beringela-2.jpg,lasanha-carne-beringela-3.jpg,img/pastosa/lasanha-carne-beringela-4.jpg', 'Delicioso Lasanha carne beringela da fase pastosa'));
+slidersPastosa.push(galleryItem('Bobó de Frango ', 'img/pastosa/bobo-frango-1.jpg', 'img/pastosa/bobo-frango-1.jpg,img/pastosa/bobo-frango-2.jpg,img/pastosa/bobo-frango-3.jpg', 'Delicioso Bobo frango da fase pastosa'));
+slidersPastosa.push(galleryItem('Lasanha de Frango e abobrinha ', 'img/pastosa/lasanha-frango-abobrinha-1.jpg', 'img/pastosa/lasanha-frango-abobrinha-1.jpg,img/pastosa/lasanha-frango-abobrinha-2.jpg,img/pastosa/lasanha-frango-abobrinha-3.jpg', 'Delicioso Lasanha frango abobrinha da fase pastosa'));
+slidersPastosa.push(galleryItem('Escondidinho de Frango ', 'img/pastosa/escondidinho-frango-1.jpg', 'img/pastosa/escondidinho-frango-1.jpg,img/pastosa/escondidinho-frango-2.jpg', 'Delicioso Escondidinho frango da fase pastosa'));
+slidersPastosa.push(galleryItem('Risoto de Frango ', 'img/pastosa/risoto-frango-1.jpg', 'img/pastosa/risoto-frango-1.jpg,img/pastosa/risoto-frango-2.jpg,img/pastosa/risoto-frango-3.jpg', 'Delicioso Risoto frango da fase pastosa'));
+slidersPastosa.push(galleryItem('Risoto de Carne ', 'img/pastosa/risoto-carne-1.jpg', 'img/pastosa/risoto-carne-1.jpg,img/pastosa/risoto-carne-2.jpg,img/pastosa/risoto-carne-3.jpg', 'Delicioso Risoto carne da fase pastosa'));
+
+var rendered = Mustache.render(template, {'produtos': slidersPastosa});
+$('#produtos-fase-pastosa').html(rendered);
+
+
+function galleryItem(title, image, modalImages, description) {
+	return { 
+		'title': title,
+		'image': image,
+		'modal-images': modalImages,
+		'description': description
+	};
+}
