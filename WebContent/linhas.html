@@ -298,8 +298,8 @@
 					<p>A Fase Pastosa tem como objetivo manter a cicatrização, favorecendo a digestão e oferecer um maior teor de
 						energia e proteínas.</p>
 
-					<ul class="slides" id="produtos-fase-pastosa">
-					</ul>
+					<div id="produtos-fase-pastosa">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -313,8 +313,8 @@
 					<p>A Fase Liquida é a fase inicial do tratamento, pois é importante para garantir a cicatrização e ao mesmo
 						tempo proporcionar o repouso gástrico.</p>
 
-					<ul class="slides" id="produtos-fase-liquida">
-					</ul>
+					<div id="produtos-fase-liquida">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -374,26 +374,27 @@
 		<!-- /.modal-dialog -->
 	</div>
 
-
 	<template id="galeria-template">
 		{{#produtos}}
-		<li>
-			<div class="col-md-3 waypoint4">
-				<div class="overlay-effect effects clearfix">
-					<div class="img">
-						<img src="{{image}}" alt="{{title}}">
-						<div class="overlay">
-							<a class="expand" data-modal-images="{{modal-images}}">
-								<i class="fa fa-search"></i><br>Veja Mais
-							</a>
-							<a class="close-overlay hidden">x</a>
+			<div class="col-sm-6 col-md-4">
+				<div class="waypoint5 padding-20">
+					<div class="light-box" style="padding: 10px;">
+						<h2>{{title}}</h2>
+						<div class="overlay-effect effects clearfix">
+							<div class="img">
+								<img src="{{image}}" alt="{{title}}">
+								<div class="overlay">
+									<a class="expand" data-modal-images="{{modal-images}}">
+										<i class="fa fa-search"></i><br>Veja Mais
+									</a>
+									<a class="close-overlay hidden">x</a>
+								</div>
+							</div>
 						</div>
+						<p>{{description}}</p>
 					</div>
 				</div>
-				<h2>{{title}}</h2>
-				<p>{{description}}</p>
 			</div>
-		</li>
 		{{/produtos}}
 	</template>
 
