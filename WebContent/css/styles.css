@@ -449,7 +449,7 @@ prods
 .prods { background: url('../img/produtos-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 200px 0; height: 100%;}
 .prods h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .prods h1 span { display: block; font-size: 25px; margin-top: 20px; }
-.fit { background: url('../img/linha-fit-bg---Copy.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 200px 0; height: 100%;}
+.fit { background: url('../img/linha-fit-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 200px 0; height: 100%;}
 .fit h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .fit h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(61, 201, 179, 0.8); display: inline-block; margin: 10px auto 20px; color: #fff; font-size: 16px; line-height: 40px; text-align: center; }
