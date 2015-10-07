@@ -6,10 +6,16 @@ $(function () {
 	if(template) {
 		
 		var slidersLiquida = new Array();
-		
-		slidersLiquida.push(galleryItem('Sopa de Carne com Lentilha', 'img/liquida/sopa-carne-lentilha-1.jpg', 'img/liquida/sopa-carne-lentilha-1.jpg,img/liquida/sopa-carne-lentilha-2.jpg', 'Deliciosa Sopa de Carne com Lentilha'));
+		slidersLiquida.push(galleryItem('Caldo de Carne', 'img/liquida/caldo-frango-1.jpg', 'img/liquida/caldo-frango-1.jpg,img/liquida/caldo-frango-2.jpg', 'Delicioso Caldo de Frango'));
+		slidersLiquida.push(galleryItem('Caldo de Peixe', 'img/liquida/caldo-frango-2.jpg', 'img/liquida/caldo-frango-1.jpg,img/liquida/caldo-frango-2.jpg', 'Delicioso Caldo de Frango'));
 		slidersLiquida.push(galleryItem('Caldo de Frango', 'img/liquida/caldo-frango-1.jpg', 'img/liquida/caldo-frango-1.jpg,img/liquida/caldo-frango-2.jpg', 'Delicioso Caldo de Frango'));
+		
+		slidersLiquida.push(galleryItem('Sopa de Peixe com Feijão', 'img/liquida/sopa-frango-feijao-1.jpg', 'img/liquida/sopa-frango-feijao-1.jpg,img/liquida/sopa-frango-feijao-2.jpg', 'Deliciosa Sopa de Frango com Feijão'));
+		slidersLiquida.push(galleryItem('Sopa de Peixe com Lentilha', 'img/liquida/sopa-carne-lentilha-2.jpg', 'img/liquida/sopa-carne-lentilha-1.jpg,img/liquida/sopa-carne-lentilha-2.jpg', 'Deliciosa Sopa de Carne com Lentilha'));
+		slidersLiquida.push(galleryItem('Sopa de Carne com Lentilha', 'img/liquida/sopa-carne-lentilha-1.jpg', 'img/liquida/sopa-carne-lentilha-1.jpg,img/liquida/sopa-carne-lentilha-2.jpg', 'Deliciosa Sopa de Carne com Lentilha'));
+		slidersLiquida.push(galleryItem('Sopa de Carne com Ervilha', 'img/liquida/sopa-carne-lentilha-2.jpg', 'img/liquida/sopa-carne-lentilha-1.jpg,img/liquida/sopa-carne-lentilha-2.jpg', 'Deliciosa Sopa de Carne com Lentilha'));
 		slidersLiquida.push(galleryItem('Sopa de Frango com Feijão', 'img/liquida/sopa-frango-feijao-1.jpg', 'img/liquida/sopa-frango-feijao-1.jpg,img/liquida/sopa-frango-feijao-2.jpg', 'Deliciosa Sopa de Frango com Feijão'));
+		slidersLiquida.push(galleryItem('Sopa de Frango com Ervilha', 'img/liquida/sopa-frango-feijao-2.jpg', 'img/liquida/sopa-frango-feijao-1.jpg,img/liquida/sopa-frango-feijao-2.jpg', 'Deliciosa Sopa de Frango com Feijão'));
 		
 		var rendered = Mustache.render(template, {'produtos': slidersLiquida, 'cssClass': 'dark-box'});
 		$('#produtos-fase-liquida').html(rendered);
