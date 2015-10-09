@@ -7,6 +7,20 @@ Start Main Menu - by PrettySticky
 	height: 100%;
 }
 
+/* Show dropdown menu when mouse hover */
+#header nav li.dropdown:hover ul.dropdown-menu{ 
+	display: block; 
+}
+
+#header .navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    background: inherit;
+	border: none;
+	font-size: 16px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 #header nav {
 	position: fixed;
 	background: none;
@@ -37,11 +51,12 @@ Start Main Menu - by PrettySticky
 	text-shadow: 0.5px 0 0 rgba(255, 255, 255, 0.5);
 }
 
-#header li.menu-item a:hover {
+#header li.menu-item a:hover, #header li.menu-item .dropdown-menu a:hover {
 	color: #b8e86e;
+	background-color: inherit;
 }
 
-#header .menu .nav>li>a:focus {
+#header .menu .nav>li>a:focus , #header .menu .nav .dropdown-menu>li>a:focus {
 	outline: none;
 }
 
@@ -60,7 +75,7 @@ Start Main Menu - by PrettySticky
 
 /* Menu when scrolling */
 
-#header nav.navScrolling {
+#header nav.navScrolling , #header nav.navScrolling .dropdown-menu {
 	background: rgba(0, 0, 0, 0.7);
 	font-size: 16px;
 	-webkit-transition: all 0s;
@@ -68,6 +83,9 @@ Start Main Menu - by PrettySticky
 	transition: all 0s;
 	color: #fff;
 	border-radius: 0px;
+}
+#header nav.navScrolling .dropdown-menu li {
+	font-size: 14px;
 }
 
 #header img.logoScrolling {
@@ -94,6 +112,18 @@ Start Main Menu - by PrettySticky
 
 @media (max-width: 768px) {
 
+	
+	#header ul .submenu-item{
+		font-size: 16px;
+		margin: 0;
+		padding-right: 30px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	
+	#header .navScrolling ul .submenu-item{
+		font-size: 14px;
+	}
 
 	#header .navbar>.container {
 		padding-right: 0px;
